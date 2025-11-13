@@ -1,5 +1,9 @@
   body {
+<<<<<<< HEAD
       background-color:#fff;
+=======
+      background-color: whitesmoke;
+>>>>>>> 1cb7392 (commit)
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
