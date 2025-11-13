@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Cookie Company</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- 🔸 HEADER -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">🍪 Kevin Cookie Co.</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#recipe">Recipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Welcome to <span>Kevin Cookie Company</span></h1>
+      <p>Where flavor meets passion. Handcrafted cookies baked to perfection with love.</p>
+      <div class="buttons">
+        <button class="btn primary" id="buyBtn">🍪 Shop Now</button>
+        <button class="btn secondary" id="contactBtn">📞 Contact Us</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🔸 ABOUT -->
+  <section class="about" id="about">
+    <h2>The Best Cookie Maker</h2>
+    <p><em>In the world</em> — Kevin Cookie Company crafts each cookie with love and fresh
+       spring water from the Cascade Mountains. Every bite is pure delight.</p>
+    <img src="images/cookies.jpg" alt="Delicious Cookies" class="cookie-img" />
+  </section>
+
+  <!-- 🔸 PRODUCTS -->
+  <section class="products" id="products">
+    <h2>Our Signature Cookies</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="images/chocochip.jpg" alt="Chocolate Chip Cookie" />
+        <h3>Chocolate Chip</h3>
+        <p>Golden-brown perfection with melted chocolate chips.</p>
+      </div>
+      <div class="card">
+        <img src="images/oatmeal.jpg" alt="Oatmeal Cookie" />
+        <h3>Oatmeal Delight</h3>
+        <p>Crunchy, hearty, and healthy — the perfect energy bite.</p>
+      </div>
+      <div class="card">
+        <img src="images/peanut.jpg" alt="Peanut Butter Cookie" />
+        <h3>Peanut Butter</h3>
+        <p>Rich and nutty goodness baked into every soft bite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔸 RECIPE -->
+  <section class="recipe" id="recipe">
+    <h2>Chocolate Chip Cookie Recipe</h2>
+    <p>Our best-selling recipe — baked with passion and sprinkled with joy.</p>
+    <a href="./recipe.html" class="btn primary">Learn How to Make Them</a>
+  </section>
+
+  <!-- 🔸 VIDEO -->
+  <section class="video">
+    <h2>Behind the Scenes</h2>
+    <video controls>
+      <source src="videos/joy-in-chaos.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- 🔸 CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Get in touch for orders, feedback, or collaborations.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- 🔸 FOOTER -->
+  <footer>
+    <p>© 2025 Kevin Cookie Company | Crafted with ❤️ & Chocolate Chips</p>
+  </footer>
+</body>
+</html>

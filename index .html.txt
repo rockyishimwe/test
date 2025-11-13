@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+
+import requests
+
+def google_search(query, api_key, cse_id, num=5):
+    """
+    Perform a Google Custom Search and return results.
+    
+    :param query: Search query string
+    :param api_key: Your Google API key
+    :param cse_id: Your Custom Search Engine ID
+    :param num: Number of search results to return (max 10)
+    :return: List of search results with title, snippet, and link
+    """
+    url = "https://www.googleapis.com/customsearch/v1"
+    params = {
+        'q': query,
+        'key': api_key,
+        'cx': cse_id,
+        'num': num
+    }
+    
+    response = requests.get(url, params=params)
+    results = []
+    if response.status_code == 200:
+        data = response.json()
+        for item in data.get('items', []):
+            results.append({
+                'title': item.get('title'),
+                'snippet': item.get('snippet'),
+                'link': item.get('link')
+            })
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+    return results
+
+# Example usage
+if __name__ == "__main__":
+    API_KEY = "YOUR_GOOGLE_API_KEY"
+    CSE_ID = "YOUR_CUSTOM_SEARCH_ENGINE_ID"
+    query = "OpenAI GPT-4"
+    
+    search_results = google_search(query, API_KEY, CSE_ID)
+    for idx, result in enumerate(search_results, start=1):
+        print(f"{idx}. {result['title']}")
+        print(f"   {result['snippet']}")
+        print(f"   Link: {result['link']}\n")

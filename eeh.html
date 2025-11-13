@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(242,245,230);
+            margin:40px;
+            color:rgb(33,37,41);
+        }
+        header{
+            color:navy;
+            text-align: center;
+            margin-bottom:30px;;
+
+        }
+        form{
+            box-shadow: 2px 2px 2px 2px;
+        }
+        .t{
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTER</h1>
+    <div class="t">
+        <form action="#" method="GET">
+            <div><label for="lName">Lastname</label><input type="text" name="lastname" id="lName"></div>
+            <div><label>Firstname</label><input type='text' name='firstname'></div>
+            <div><label for='email'>email</label><input type="text" id='email'></div>
+            <div><label>Gender</label></div>
+            <input type="radio" name="gender" value="male"><label>male</label>
+            <input type="radio" name="gender" value="female"><label>female</label>
+            <div><label>SPOKEN LANGUAGES</label></div>
+                 <input type="checkbox" name="english" value="English" id="en"><label>English</label><br>
+                 <input type="checkbox" name="French" value="French" id="fr"><label for="fr">french</label><br>
+                 <input type="checkbox" name="Kinyarwanda" value="Kinyarwanda" id="kiny"><label for="kiny">Kinyarwanda</label>
+                 <div><label> Enter password</label> <input type="password"></div>
+
+
+                 <div><select>
+                    <option>Select your favorite meal</option>
+                    <option value="ibirayi">Ibirayi</option>
+                    <option value="ibijumba">Ibijumba</option>
+                    <option value="imyumbati">Imyumbati</option>
+                    <option value="Umuceri">Umuceri</option>
+                 </select></div>
+                 <div><label for="age">Age</label><input type='number' name="age" id='age'></div>
+                           <div><label>Date of Birth</label><input type='date' name='dob'></div>
+                            <div><label for="comment">comment</label>
+        <textarea name="comment" rows="5" cols="40" id="comment" placeholder="Enter the comment"></textarea></div>
+         <input type="submit" value="submit" onclick="alert('succefully registered')">
+    
+
+
+    
+        </form>
+    </div>
+</body>
+</html>
